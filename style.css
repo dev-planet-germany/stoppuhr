@@ -1,0 +1,21 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#zeitanzeige {
+    font-size: 7em;
+    margin-bottom: 25px;
+    font-family: monospace;
+}
+
+button {
+    font-size: 2em;
+    width: 150px;
+    margin: 0 15px;
+}
