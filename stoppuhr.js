@@ -37,7 +37,8 @@ function aktualisiereAnzeige() {
     stunden = stunden < 10 ? "0" + stunden : stunden;
     minuten = minuten < 10 ? "0" + minuten : minuten;
     sekunden = sekunden < 10 ? "0" + sekunden : sekunden;
-    millisekunden = (millisekunden + "000").slice(0, 3);
+    millisekunden = "000" + millisekunden;
+    millisekunden = millisekunden.slice(millisekunden.length - 3);
 
     anzeige.innerHTML = stunden + ":" + minuten + ":" + sekunden + "." + millisekunden;
 }
